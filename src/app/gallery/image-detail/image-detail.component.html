@@ -1,11 +1,11 @@
 <div *ngIf="selectedImage">
 	<div class="container image-detail">
 		<div class="row">
-			<div class="col-md-8 col-xs-12">
-				<img [src]="selectedImage.imageLink" class="img-responsive">
+			<div class="col-md-8">
+				<img [src]="selectedImage.imageLink" class="img-responsive" width="700">
 			</div>
-			<div class="col-md-4 col-xs-12">
-				<h1>{{selectedImage.title}}</h1>
+			<div class="col-md-4">
+				<h1>{{selectedImage.title | uppercase}}</h1>
 				<p>{{selectedImage.description}}</p>
 			</div>
 		</div>

@@ -1,8 +1,10 @@
 import { Injectable } from '@angular/core';
 import { Image } from '../models/image';
-import { Http } from '@angular/http';
+import { Http, Response } from '@angular/http';
 import { Observable } from 'rxjs/Rx';
-// import 'rxjs/Rx';
+import 'rxjs/Rx';
+import 'rxjs/add/operator/map';
+import 'rxjs/add/operator/map';
 
 @Injectable({
   providedIn: 'root'
@@ -32,6 +34,6 @@ export class ImageService {
   	// 	return this.images;
   	// }
   	getImages(): Observable<Image[]> {
-  		return this.http.get('http://localhost:8000/api/v1/images').map((response:Response) => response.json());
+  		return this.http.get('http://localhost:8000/api/v1/images').map((response: Response) => response.json());
   	}
 }

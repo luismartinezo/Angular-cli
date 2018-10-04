@@ -20,10 +20,10 @@ filter: gray;
 a:hover {
 	cursor:pointer;
 }
-`];
+`]
 })
 export class ImageComponent implements OnInit {
-	@Input() image:image;
+	@Input() image:Image;
   constructor() { }
 
   ngOnInit() {
