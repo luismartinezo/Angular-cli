@@ -1,4 +1,6 @@
-# Nggallery
+# Galeria de Imagenes - Nggallery
+
+Se utiliza API desde laravel para traer las imagenes
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.3.
 
